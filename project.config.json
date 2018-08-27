@@ -9,8 +9,8 @@
 	},
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
-	"appid": "y",
-	"projectname": "y",
+	"appid": "touristappid",
+	"projectname": "maoyan",
 	"condition": {
 		"search": {
 			"current": -1,

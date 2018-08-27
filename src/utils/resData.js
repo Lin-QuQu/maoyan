@@ -6,6 +6,16 @@ const resFilmData = [
   { poster: require('@/assets/images/afilm.jpg'), title: '快把我哥带走', is3D: false, expect: '', score: '', type: '喜剧，奇幻', actor: '张子枫，彭昱畅，赵今麦', isShow: false, cinema: '154', field: '1239' },
 ]
 
+const resCinemaData = [
+  { name: '滨文电影大世界', location: '滨江区滨文路577号华润超市4楼', price: '23', distance: '600' },
+  { name: '滨文电影大世界2', location: '滨江区滨文路577号华润超市4楼', price: '23', distance: '600' },
+  { name: '滨文电影大世界3', location: '滨江区滨文路577号华润超市4楼', price: '23', distance: '600' },
+  { name: '滨文电影大世界4', location: '滨江区滨文路577号华润超市4楼', price: '23', distance: '600' },
+  { name: '滨文电影大世界5', location: '滨江区滨文路577号华润超市4楼', price: '23', distance: '600' },
+  { name: '滨文电影大世界6', location: '滨江区滨文路577号华润超市4楼', price: '23', distance: '600' },
+]
+
 module.exports = {
-  resFilmData: resFilmData
+  resFilmData: resFilmData,
+  resCinemaData: resCinemaData
 }

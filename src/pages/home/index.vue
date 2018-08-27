@@ -18,11 +18,11 @@
       </scroll-view>
     </main>
     <footer class="fixed bottom0 width100 padding5X bordertop1 bgcolor-white flex-align-spacebetween">
-      <div :class="['width33', 'textAlignCenter', footerTab===1 ? 'the-color-red':'color-999']" @tap="switchTab('footer', 1)">
+      <div :class="['width33', 'textAlignCenter', footerTab===1 ? 'the-color-red':'color-999']" @tap="switchTab('footer', 1);changePath('/pages/home/main')">
         <i class="icon-film fontsize5 bold"></i>
         <p class="fontsize-1 margintop5">电影</p>
       </div>
-      <div :class="['width33', 'textAlignCenter', footerTab===2 ? 'the-color-red':'color-999']" @tap="switchTab('footer', 2)">
+      <div :class="['width33', 'textAlignCenter', footerTab===2 ? 'the-color-red':'color-999']" @tap="switchTab('footer', 2);changePath('/pages/cinema/main')">
         <i class="icon-cinema fontsize5 bold"></i>
         <p class="fontsize-1 margintop5">影院</p>
       </div>
@@ -67,6 +67,11 @@ export default {
       setTimeout(() => {
         this.ifList = true
       }, 100)
+    },
+    changePath (path) {
+      wx.redirectTo({
+        url: path
+      })
     },
     // 加载更多
     loadMore(e) {
